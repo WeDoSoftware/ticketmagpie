@@ -7,6 +7,11 @@
     <groupId>com.ticketmagpie</groupId>
     <artifactId>ticketmagpie</artifactId>
     <version>0.1.0</version>
+    
+    <properties>
+        <jackson.version>2.12.0</jackson.version>
+    </properties>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,9 +20,15 @@
     </parent>
 
     <dependencies>
+             
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
